@@ -1,0 +1,15 @@
+{
+	"dev": {
+		"ENV": "DEV",
+        "PORT": 8000,
+ 		"ROOT": "<%= actName %>",
+        "APIDOMAIN": "http://127.0.0.1:8000/<%= actName %>"
+	},
+	"prod": {
+        "ENV": "PROD",
+		"PORT": 8000,
+ 		"ROOT": "<%= actName %>",
+        "APIDOMAIN": "http://127.0.0.1:8000/<%= actName %>"
+
+	}
+}
