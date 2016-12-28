@@ -26,21 +26,7 @@ fis.set('base.static',config.ROOT + '/public');
 fis.set('new date', Date.now());
 
 
-fis.match('*.handlebars', {
-    isHtmlLike: true,
-    rExt: 'html',
-    parser: fis.plugin('biketo-handlebars', {
-        opts: {
-            ignorePartials: true,
-            partialRoot: 'cmp/',
-            dataRoot: ['cmp/', 'views/'],
-            helpers: {
 
-            }
-        },
-        data: { dev: config.dev }
-    })
-});
 
 fis.match('*',{
     release: '${base.root}/$0',
