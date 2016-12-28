@@ -6,9 +6,9 @@
     "main": "app.js",
     "type": "<%= oloType %>",
     "scripts": {
-        "watch": "olo w",
-        "start": " olo s",
-        "release": " olo r prod -cd ../prod ",
+        "w": "olo w",
+        "s": " olo s",
+        "prod": " olo r prod -cd ../prod ",
         "pm2": "pm2 start pm2.json --env prod"
     },
     "keywords": [
